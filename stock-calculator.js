@@ -18,3 +18,9 @@ function main()
 
   });
 }
+
+$(function() {
+  $("input.add_button").on("click", function(){
+    alert("test");
+  });
+});
