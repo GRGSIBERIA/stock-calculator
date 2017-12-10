@@ -1,11 +1,20 @@
 "use strict";
 
-function blur()
+function openBlur()
 {
 
 }
 
-function keydown()
+function openKeydown()
 {
 
+}
+
+function main()
+{
+  var names = ["money", "stock", "value", "has_stock", "has_ratio", "has_value"];
+
+  names.forEach(function(e, i, a) {
+
+  });
 }

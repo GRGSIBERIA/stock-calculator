@@ -17,18 +17,18 @@
       <table id="startup">
         <tr>
           <td>資本金</td>
-          <td><input type="text" name="money" pattern="^[0-9]*$" onblur="" onkeydown="" /></td>
+          <td><input type="text" name="money" pattern="^[0-9]*$" /></td>
           <td>[万円]</td>
         </tr>
         <tr>
           <td>発行株数</td>
-          <td><input type="text" name="stock" pattern="^[0-9]*$" onblur="" onkeydown="" /></td>
+          <td><input type="text" name="stock" pattern="^[0-9]*$" /></td>
           <td>[株]</td>
         </tr>
         <tr>
           <td>株価</td>
-          <td><input type="text" name="value" pattern="^[0-9]*$" onblur="" onkeydown="" /></td>
-          <td>[万円]</td>
+          <td><input type="text" name="value" disabled="disabled" /></td>
+          <td>[万円/株]</td>
         </tr>
         <tr>
           <td>持ち株数</td>
@@ -48,13 +48,18 @@
       <table id="round1">
         <tr>
           <td>調達額</td>
-          <td><input type="text" name="money1" pattern="^[0-9]*$" onblur="" onkeydown="" /></td>
+          <td><input type="text" name="money1" pattern="^[0-9]*$" /></td>
+          <td>[万円]</td>
+        </tr>
+        <tr>
+          <td>評価額</td>
+          <td><input type="text" name="has_value1" disabled="disabled"/></td>
           <td>[万円]</td>
         </tr>
         <tr>
           <td>株価</td>
           <td><input type="text" name="value1" disabled="disabled"/></td>
-          <td>[万円]</td>
+          <td>[万円/株]</td>
         </tr>
         <tr>
           <td>持ち株数</td>
