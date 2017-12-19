@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>株式計算機</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./stock-calculator.js"></script>
+  </head>
+  <body>
+    <h1>株式計算機</h1>
+    <section>
+      <p>自己資金からラウンドごとの持株比率を自動的に計算する機械</p>
+    </section>
+    <section>
+      <hr>
+      <h2>自己資本</h2>
+      <table id="startup">
+        <tr>
+          <td>資本金</td>
+          <td><input type="text" name="money" pattern="^[0-9]*$" /></td>
+          <td>[万円]</td>
+        </tr>
+        <tr>
+          <td>発行株数</td>
+          <td><input type="text" name="stock" pattern="^[0-9]*$" /></td>
+          <td>[株]</td>
+        </tr>
+        <tr>
+          <td>株価</td>
+          <td><input type="text" name="value" disabled="disabled" /></td>
+          <td>[万円/株]</td>
+        </tr>
+        <tr>
+          <td>持ち株数</td>
+          <td><input type="text" name="has_stock" disabled="disabled" /></td>
+          <td>[株]</td>
+        </tr>
+        <tr>
+          <td>持ち株比率</td>
+          <td><input type="text" name="has_ratio" disabled="disabled" /></td>
+          <td>[%]</td>
+        </tr>
+      </table>
+    </section>
+    <section id="button_section">
+      <hr>
+      <input type="button" name="add_button" value="追加調達" />
+    </section>
+  </body>
+</html>
