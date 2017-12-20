@@ -31,4 +31,5 @@ gulp.task("default", ["browser-sync"], function() {
   gulp.watch("./public/*.html", ["bs-reload"]);
   gulp.watch("./public/js/*.js", ["bs-reload"]);
   gulp.watch("./public/css/*.css", ["bs-reload"]);
+  gulp.watch("./public/jsx/*.jsx", ["jsx-compile"]);
 });
